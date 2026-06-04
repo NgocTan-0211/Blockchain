@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>
+History
+</title>
+
+</head>
+
+<body>
+
+<h1>
+
+LỊCH SỬ CẢNH BÁO
+
+</h1>
+
+<table border="1">
+
+<tr>
+
+<th>ID</th>
+<th>Ảnh</th>
+<th>Hash</th>
+<th>Tx Hash</th>
+<th>Time</th>
+
+</tr>
+
+{% for event in events %}
+
+<tr>
+
+<td>{{event[0]}}</td>
+
+<td>
+
+{{event[1]}}
+
+</td>
+
+<td>
+
+{{event[2]}}
+
+</td>
+
+<td>
+
+{{event[3]}}
+
+</td>
+
+<td>
+
+{{event[4]}}
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+
+</html>
